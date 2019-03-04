@@ -9,4 +9,52 @@ html,body{
 	font-size:16px;
 	font-family:"noto";
 	margin:0;
+	width:100%;
+	height:100%;
+}
+a{
+	color:#333;
+	text-decoration:none;
+}
+a:hover{
+	color:red;
+}
+img{
+	vertical-align:bottom;
+}
+table,td,th{
+	border:1px solid black;
+	border-collapse:collapse;
+}
+*{
+	margin:0; padding:0; box-sizing:border-box;
+}
+
+.container{
+	width:100%;
+	height:100%;
+}
+.header{
+	width:100%;
+	height:100%;
+	background:lightblue;
+}
+.section-wrap{
+	width:100%;
+	height:100%;
+	background:pink;
+}
+.section{
+	width:100%;
+	height:100%;
+	border:1px solid black;
+	float:left;
+}
+.footer{
+	width:100%;
+	height:100px;
+	background:black;
+	color:white;
+	clear:both;
+	float:left;
 }
