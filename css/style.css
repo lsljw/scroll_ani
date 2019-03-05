@@ -37,7 +37,11 @@ table,td,th{
 .header{
 	width:100%;
 	height:100%;
-	background:lightblue;
+	background:url(../images/logo.png), url(../images/back2.jpg);
+	background-repeat:no-repeat;
+	background-size:100px, cover;
+	background-position:right bottom, center;
+	background-attachment:fixed;
 }
 .section-wrap{
 	width:100%;
@@ -57,4 +61,75 @@ table,td,th{
 	color:white;
 	clear:both;
 	float:left;
+}
+
+.logo{
+	position:relative;
+	width:100px;
+	height:100px;
+	margin:auto;
+	top:20%;
+	background:transparent;
+	opacity:0;
+	transform:scale(0);
+	animation-name:logoani;
+	animation-duration:1s;
+	animation-fill-mode:forwards;
+}
+.logo img{
+	width:100%;
+}
+@keyframes logoani{
+	0%{
+		opacity:0;
+		transform:scale(0);
+	}
+	100%{
+		opacity:1;
+		transform:scale(1);
+	}
+}
+
+.nav{
+	position:relative;
+	width:80%;
+	margin:auto;
+	height:70px;
+	background:trasnparent;
+	top:30%;
+	border:1px solid black;
+	border-radius:5px;
+}
+.s-button{
+	width:50px;
+	height:50px;
+	background:transparent;
+	border:none;
+	position:absolute;
+	bottom:20px;
+	font-size:20px;
+	
+}
+.nav>ul{
+	list-style:none;
+	width:100%;
+	text-align:center;
+	
+}
+.nav>ul>li{
+	display:inline-block;
+	width:17%;
+	
+	height:50px;
+	margin-top:10px;
+}
+.nav>ul>li>a{
+	width:100%;
+	height:100%;
+	background:rgba(255,255,255,0.5);
+	display:table;
+}
+.nav>ul>li>a>span{
+	display:table-cell;
+	vertical-align:middle;
 }
