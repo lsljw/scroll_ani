@@ -133,3 +133,53 @@ table,td,th{
 	display:table-cell;
 	vertical-align:middle;
 }
+
+/* 추가 */
+.s0{
+	background:url(../images/back1.jpg);
+	
+}
+.s1{
+	background:url(../images/back3.jpg);
+	
+}
+.s2{
+	background:url(../images/back4.jpg);
+	
+}
+.s3{
+	background:url(../images/back1.jpg);
+	
+}
+.s4{
+	background:url(../images/back3.jpg);
+	
+}
+.section{
+	background-attachment:fixed;
+	background-size:cover;
+	background-position:center;	
+	transition:1s;
+	opacity:0;
+	
+}
+.s0-title,
+.s1-title,
+.s2-title,
+.s3-title,
+.s4-title{
+	width:20%;
+	height:50px;
+	border:1px solid black;
+	position:relative;
+	top:20%;
+	margin:auto;
+}
+.content{
+	width:50%;
+	height:200px;
+	border:1px solid black;
+	position:relative;
+	top:30%;
+	margin:auto;
+}
