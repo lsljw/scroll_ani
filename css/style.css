@@ -160,7 +160,8 @@ table,td,th{
 	background-size:cover;
 	background-position:center;	
 	transition:1s;
-	opacity:0;
+	opacity:1;
+	overflow:hidden;
 	
 }
 .s0-title,
@@ -175,11 +176,17 @@ table,td,th{
 	top:20%;
 	margin:auto;
 }
+.s0-title{
+	top:50%;
+}
 .content{
 	width:50%;
 	height:200px;
 	border:1px solid black;
 	position:relative;
 	top:30%;
-	margin:auto;
+	left:25%;
+}
+.s0>.content{
+	left:-100%;
 }

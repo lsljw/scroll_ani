@@ -35,6 +35,14 @@ $(function(){
 		if($(".s0").offset().top<sTop+700){
 			
 			$(".s0").css({opacity:1});
+			if($(".s0").offset().top<sTop+300){
+				$(".s0-title").stop().animate({
+					top:"20%"
+				});
+				$(".s0>.content").delay(500).animate({
+					left:"25%"
+				});
+			}
 		}
 		if($(".s1").offset().top<sTop+700){
 			
