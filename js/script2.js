@@ -47,6 +47,12 @@ $(function(){
 		if($(".s1").offset().top<sTop+700){
 			
 			$(".s1").css({opacity:1});
+			if($(".s1").offset().top<sTop+300){
+				
+				$(".s1>.content").stop().animate({
+					top:"30%"
+				});
+			}
 
 		}
 		if($(".s2").offset().top<sTop+700){
